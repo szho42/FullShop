@@ -1,0 +1,93 @@
+<include file="Public:header"/>
+	<div class="clearfix"></div>
+	<div class="page-container">
+		<div class="page-sidebar navbar-collapse collapse">
+			<ul class="page-sidebar-menu">
+				<li class=""><a href="javascript:;"> <i class="fa fa-home"></i>
+						<span class="title">全局</span> <span class="arrow "></span>
+				</a>
+					<ul class="sub-menu">
+						<li><a href="__APP__/Group/index"> 商城设置</a></li>
+						<li><a href="__APP__/Group/theme"> 主题设置</a></li>
+						<li><a href="__APP__/Group/payonline"> 在线支付</a></li>
+						<li><a href="__APP__/Group/setemail"> 邮件设置</a></li>
+					</ul></li>
+
+				<li class=""><a href="javascript:;"> <i class="fa fa-truck"></i>
+						<span class="title">商品</span> <span class="arrow "></span>
+				</a>
+					<ul class="sub-menu">
+						<li><a href="__APP__/Goods/index"> 商品管理</a></li>
+						<li><a href="__APP__/Goods/menu"> 商品分类</a></li>
+					</ul></li>
+				<li class=""><a href="javascript:;"> <i class="fa fa-list"></i>
+						<span class="title">订单</span> <span class="arrow "></span>
+				</a>
+					<ul class="sub-menu">
+						<li><a href="__APP__/Orders/index"> 订单管理</a></li>
+					</ul></li>
+				<li class=""><a href="javascript:;"> <i
+						class="fa fa-sitemap"></i> <span class="title">微信</span> <span
+						class="arrow "></span>
+				</a>
+					<ul class="sub-menu">
+						<li><a href="__APP__/Weixin/replay"> 微信初始化</a></li>
+					</ul></li>
+				<li class=""><a href="javascript:;"> <i class="fa fa-user"></i>
+						<span class="title">用户</span> <span class="arrow "></span>
+				</a>
+					<ul class="sub-menu">
+						<li><a href="__APP__/Users/index"> 用户管理</a></li>
+					</ul></li>
+
+				<!--li class=""><a href="javascript:;"> <i class="fa fa-cloud"></i>
+						<span class="title">云商店</span> <span class="arrow "></span>
+				</a>
+					<ul class="sub-menu">
+						<li><a href="__APP__/Yun/index">主题</a></li>
+						<li><a href="__APP__/Yun/plugin">插件</a></li>
+					</ul></li-->						
+			</ul>
+		</div>
+		<div class="page-content">
+			<div class="row">
+				<div class="col-md-12">
+					<h3 class="page-title">全局设置</h3>
+					<ul class="page-breadcrumb breadcrumb">
+						<li><i class="fa fa-home"></i> <a href="">首页</a> <i
+							class="fa fa-angle-right"></i></li>
+						<li><a href="#">微商城初始化</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="panel panel-default">
+				<div class="panel-heading">微商接口配置URL</div>
+				<div class="panel-body">{$url}__ROOT__/weixin.php</div>
+			</div>
+
+			<div class="panel panel-default">
+				<div class="panel-heading">微商接口配置Token</div>
+				<div class="panel-body">wemall</div>
+			</div>
+			
+			<div class="panel panel-default">
+				<div class="panel-heading">手机WeShops管理后台</div>
+				<div class="panel-body">{$url}__APP__/Mobile/Index/index</div>
+			</div>
+			
+			<div class="panel panel-default">
+				<div class="panel-heading">微信打印机通信地址(普通打印机)</div>
+				<div class="panel-body">{$url}__ROOT__/print.php</div>
+			</div>
+		</div>
+	</div>
+	
+	<include file="Public:footer"/>
+	<script>
+		jQuery(document).ready(function() {
+			App.init(); // initlayout and core plugins
+		});
+	</script>
+</body>
+</html>
