@@ -65,7 +65,7 @@ CREATE TABLE IF NOT EXISTS `dbprefix_info` (
 --
 
 INSERT INTO `dbprefix_info` (`id`, `title`, `gonggao`) VALUES
-(1, 'WeShops商店平台', '欢迎来到WeShops，这个是我们的demo，有合作意向，请关注公众号WeShops 或者联系管理员（微信号： LinuxPI）');
+(1, 'WeShops商店平台', '欢迎来到WeShops，这个是我们的demo，小店后台管理可以访问shops.myneighbours.net，用户名：admin, 密码： demo。有合作意向，请关注公众号WeShops 或者联系管理员（微信号： LinuxPI）');
 
 -- --------------------------------------------------------
 
